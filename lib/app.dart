@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:number_master_puzzle/features/game/data/presentation/screens/home_screen.dart';
+import 'package:number_master_puzzle/screens/home_screen.dart';
 
 class NumberMasterApp extends StatelessWidget {
   const NumberMasterApp({super.key});

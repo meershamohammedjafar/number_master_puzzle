@@ -9,16 +9,10 @@ class AppColors {
   // Background Colors
   static const Color background = Color(0xFFF5F5F5);
   static const Color surface = Color(0xFFFFFFFF);
-  static const Color cardBackground = Color(0xFFFFFFFF);
   
-  // Text Colors
-  static const Color textPrimary = Color(0xFF212121);
-  static const Color textSecondary = Color(0xFF757575);
-  static const Color textHint = Color(0xFFBDBDBD);
-  
-  // Game-specific Colors
-  static const Color tileDefault = Color(0xFFE3F2FD);
-  static const Color tileSelected = Color(0xFFBBDEFB);
+  // Tile Colors
+  static const Color tileNormal = Color(0xFFE3F2FD);
+  static const Color tileSelected = Color(0xFF2196F3);
   static const Color tileMatched = Color(0xFFE8F5E8);
   static const Color tileFaded = Color(0xFFEEEEEE);
   
@@ -26,22 +20,36 @@ class AppColors {
   static const Color success = Color(0xFF4CAF50);
   static const Color warning = Color(0xFFFF9800);
   static const Color error = Color(0xFFF44336);
-  static const Color info = Color(0xFF2196F3);
-  
-  // Button Colors
-  static const Color buttonPrimary = Color(0xFF2196F3);
-  static const Color buttonSecondary = Color(0xFFE0E0E0);
-  static const Color buttonDisabled = Color(0xFFBDBDBD);
   
   // Timer Colors
-  static const Color timerNormal = Color(0xFF4CAF50);
+  static const Color timerGood = Color(0xFF4CAF50);
   static const Color timerWarning = Color(0xFFFF9800);
-  static const Color timerCritical = Color(0xFFF44336);
+  static const Color timerDanger = Color(0xFFF44336);
   
   // Level Colors
   static const List<Color> levelColors = [
-    Color(0xFF4CAF50), // Beginner - Green
-    Color(0xFFFF9800), // Intermediate - Orange
-    Color(0xFFF44336), // Expert - Red
+    Color(0xFF4CAF50), // Beginner
+    Color(0xFFFF9800), // Intermediate  
+    Color(0xFFF44336), // Expert
   ];
+}
+
+class AppGradients {
+  static const LinearGradient backgroundGradient = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [Color(0xFFE3F2FD), Color(0xFFFFFFFF)],
+  );
+  
+  static const LinearGradient tileGradient = LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [Color(0xFFE3F2FD), Color(0xFFBBDEFB)],
+  );
+  
+  static const LinearGradient selectedTileGradient = LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [Color(0xFF2196F3), Color(0xFF1976D2)],
+  );
 }
